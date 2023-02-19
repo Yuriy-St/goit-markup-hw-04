@@ -96,6 +96,34 @@ address {
   margin-bottom: 72px;
 }
 
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--color-light);
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.social-icon {
+  width: 16px;
+  height: 16px;
+}
 /* #endregion */
 
 /* #region Utility */
@@ -192,8 +220,30 @@ address {
   padding-bottom: 100px;
 }
 
+.footer .container {
+  display: flex;
+  gap: 120px;
+}
+
 .footer-content {
   width: 264px;
+}
+
+.footer-socials {
+  font-weight: 500;
+}
+
+.footer-socials > p {
+  margin-bottom: 16px;
+}
+
+.footer-socials .social-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-socials .social-link:hover,
+.footer-socials .social-link:focus {
+  background-color: var(--color-success);
 }
 
 .footer .logo {
@@ -205,6 +255,7 @@ address {
 
 /* #region Hero */
 .hero {
+  max-width: 1440px;
   color: var(--color-white);
   background-color: rgba(46, 47, 66, 0.7);
   background-image: linear-gradient(
@@ -216,6 +267,8 @@ address {
   background-size: cover;
   padding-top: 188px;
   padding-bottom: 188px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-title {
@@ -327,8 +380,67 @@ address {
 }
 
 .team-item-thumb {
+  padding-left: 16px;
+  padding-right: 16px;
   margin-top: 32px;
   margin-bottom: 32px;
+}
+
+.team-item-text {
+  margin-bottom: 8px;
+}
+
+.team .social-link {
+  background-color: var(--color-primary-brand);
+}
+
+.team .social-link:hover,
+.team .social-link:focus {
+  background-color: var(--color-pressed-state);
+}
+
+/* #endregion */
+
+/* #region Customers */
+.customers {
+  padding-top: 130px;
+  padding-bottom: 120px;
+}
+
+.customers-title {
+  text-transform: capitalize;
+}
+
+.customers-list {
+  display: flex;
+  gap: 24px;
+}
+
+.customer-item {
+  width: 168px;
+  height: 88px;
+}
+
+.customer-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--color-subtle-text);
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--color-subtle-text);
+  border-radius: 4px;
+}
+
+.customer-link:hover,
+.customer-link:focus {
+  fill: var(--color-pressed-state);
+  border-color: var(--color-pressed-state);
+}
+
+.customer-icon {
+  width: 104px;
+  height: 56px;
 }
 
 /* #endregion */
