@@ -88,6 +88,11 @@ address {
   text-align: center;
 }
 
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .section-title {
   font-size: 36px;
   line-height: 1.11;
@@ -103,12 +108,8 @@ address {
   gap: 24px;
 }
 .social-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
 }
 .social-link {
   display: flex;
@@ -117,7 +118,7 @@ address {
   fill: var(--color-light);
   width: 100%;
   height: 100%;
-  border-radius: inherit;
+  border-radius: 50%;
 }
 
 .social-icon {
@@ -246,6 +247,11 @@ address {
   background-color: var(--color-success);
 }
 
+.footer .social-icon {
+  width: 24px;
+  height: 24px;
+}
+
 .footer .logo {
   color: var(--color-light);
   margin-bottom: 16px;
@@ -297,11 +303,6 @@ address {
 /* #endregion */
 
 /* #region Benefits */
-.benefits {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-
 .benefits-list {
   display: flex;
   align-items: center;
@@ -354,8 +355,6 @@ address {
 /* #region Our team */
 .team {
   background-color: var(--color-light);
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 
 .team-list {
@@ -380,10 +379,8 @@ address {
 }
 
 .team-item-thumb {
-  padding-left: 16px;
-  padding-right: 16px;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .team-item-text {
@@ -402,11 +399,6 @@ address {
 /* #endregion */
 
 /* #region Customers */
-.customers {
-  padding-top: 130px;
-  padding-bottom: 120px;
-}
-
 .customers-title {
   text-transform: capitalize;
 }
@@ -427,7 +419,7 @@ address {
   align-items: center;
   fill: var(--color-subtle-text);
   width: 100%;
-  height: 100%;
+  height: 88px;
   border: 1px solid var(--color-subtle-text);
   border-radius: 4px;
 }
